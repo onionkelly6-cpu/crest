@@ -110,7 +110,6 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-14 border-t border-background/15 pt-8 text-sm text-background/65">
-          <p className="max-w-3xl">{SITE_DEMO_NOTICE}</p>
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs">
             {legalLinks.map((link) => (
               <Link key={link.href} href={link.href} className="hover:text-background">
