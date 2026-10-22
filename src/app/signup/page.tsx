@@ -41,7 +41,6 @@ export default async function SignupPage({ searchParams }: Props) {
           </Link>
         </p>
         <p className="mt-6 border-t border-border pt-4 text-center text-xs text-muted-foreground">
-          {SITE_DEMO_NOTICE}
         </p>
       </Card>
     </div>
