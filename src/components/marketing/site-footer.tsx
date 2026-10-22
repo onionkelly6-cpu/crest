@@ -99,29 +99,51 @@ export function SiteFooter() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 text-xs text-background/65">
-              Enquiries are taken through the{" "}
-              <Link href="/contact" className="underline hover:text-background">
-                enquiry form
-              </Link>
-              .
-            </p>
-          </div>
-        </div>
+           
+<p className="mt-5 text-xs text-background/65">
+  Enquiries are taken through the{" "}
+  <Link href="/contact" className="underline hover:text-background">
+    enquiry form
+  </Link>
+  .
+</p>
 
-        <div className="mt-14 border-t border-background/15 pt-8 text-sm text-background/65">
-          <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs">
-            {legalLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="hover:text-background">
-                {link.label}
-              </Link>
-            ))}
-          </div>
-          <p className="mt-6">
-            &copy; {new Date().getFullYear()} {SITE_NAME}.
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-}
+{/* Contact information */}
+<div className="mt-5 flex flex-col gap-3 text-xs text-background/65 sm:flex-row sm:gap-6">
+  <a
+    href="tel:+ +44 7480674853"
+    className="hover:text-background transition-colors"
+  >
+    Phone: +44 7480674853
+  </a>
+
+  <a
+    href="mailto:info@crestbridgelegal.co.uk"
+    className="hover:text-background transition-colors"
+  >
+    Email: info@crestbridgelegal.co.uk
+  </a>
+</div>
+
+</div>
+</div>
+
+<div className="mt-14 border-t border-background/15 pt-8 text-sm text-background/65">
+  <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs">
+    {legalLinks.map((link) => (
+      <Link
+        key={link.href}
+        href={link.href}
+        className="hover:text-background"
+      >
+        {link.label}
+      </Link>
+    ))}
+  </div>
+
+  <p className="mt-6">
+    &copy; {new Date().getFullYear()} {SITE_NAME}.
+  </p>
+</div>
+</div>
+</footer>
