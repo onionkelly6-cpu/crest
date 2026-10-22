@@ -25,7 +25,6 @@ export default async function PortalLayout({
         {children}
       </main>
       <footer className="border-t border-border px-6 py-4 text-center text-xs text-muted-foreground">
-        {SITE_DEMO_NOTICE}
       </footer>
     </div>
   );
